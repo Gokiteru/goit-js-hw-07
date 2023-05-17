@@ -8,7 +8,6 @@ const itemsMarkup = createGalleryItemsMarkup(galleryItems);
 galleryContainer.insertAdjacentHTML("beforeend", itemsMarkup);
 galleryContainer.addEventListener("click", onImgClick);
 
-// 1 - Render
 function createGalleryItemsMarkup(items) {
   return items
     .map(({ preview, original, description }) => {

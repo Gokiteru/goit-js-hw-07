@@ -7,7 +7,6 @@ const galleryContainer = document.querySelector(".gallery");
 const itemsMarkup = createGalleryItemsMarkup(galleryItems);
 galleryContainer.insertAdjacentHTML("beforeend", itemsMarkup);
 
-// rendered items
 function createGalleryItemsMarkup(items) {
   return items
     .map(({ preview, original, description }) => {
